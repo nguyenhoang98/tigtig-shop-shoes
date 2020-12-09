@@ -1,0 +1,29 @@
+.sportshoes{
+    margin:20px auto ;
+    &__card{
+        position: relative;
+        &__image{
+            width:100% ;
+            height: 260px ;
+        }
+        &__body{
+            &__name , 
+            &__label{
+                font-weight: bold;
+            }
+        }
+        &:hover &__overflow__cart{
+            opacity: 1;
+            transition: 0.6s;
+            left:20px ;
+        }
+        &:hover &__overflow__heart{
+            opacity: 1;
+            transition: 0.6s;
+            left:20px ;
+        }
+    } 
+    &__card:hover &__card__animation{
+        box-shadow: 2px 2px 2px #ccc , -2px -2px 2px #ccc ;
+    }
+}

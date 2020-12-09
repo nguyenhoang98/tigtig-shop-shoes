@@ -1,0 +1,80 @@
+.navbar{
+    width:100% ;
+    background: white ;
+    border:1px solid #ccc ;
+    position: fixed;
+    top:0px; 
+    left:0px ;
+    z-index: 99 ;
+    & a{
+        padding:10px 6px ;
+        color:rgb(59, 59, 59)   ;
+        text-decoration: none ;
+        font-size: 13px;
+    }
+    & i{
+        font-size: 22px;
+    }
+    &__menu{
+        line-height: 50px;
+        padding:10px ;
+        display: none;
+    }
+    &__logo{
+        line-height: 50px;
+        &__img{
+            width:35px ;
+            height: 35px ;
+            transform: translateY(10px);
+        }
+        &__text{
+            font-size: 25px !important ;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    }
+    &__control{
+        line-height: 50px;
+        position: relative;
+        &__input{
+            outline: none;
+            width:100% ;
+            height: auto;
+            padding:16px 50px ;
+            font-size: 17px;
+        }
+        &__search{
+            width:35px ;
+            height: 35px;
+            position: absolute;
+            top:20px; 
+            left:20px ;
+        }
+    }
+    &__action{
+        line-height: 50px; 
+        & ul{
+            padding:0px; 
+            margin:0px ;
+            list-style-type: none;
+        }
+        & ul li{
+            float:left ;
+            position: relative;
+        }
+        &__cart{
+            &__badge{
+                position: absolute;
+                top:-15px ;
+                right:-6px;
+                border-radius: 50%;
+                color:black ;
+            }
+        }
+    }
+
+
+}
+.btn-toggle-menu{
+    background: white;
+    color:black ;
+}

@@ -1,0 +1,14 @@
+.footer{
+    background: #000;
+    color:white ;
+    padding:30px ;
+    &__link a{
+        display: block;
+        color:rgb(206, 205, 205) ;
+        text-decoration: none;
+        text-transform: capitalize;
+    } ;
+    &__link a:hover{
+       color : rgb(126, 126, 126) ;
+    }
+}

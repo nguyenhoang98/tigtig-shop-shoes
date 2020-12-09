@@ -1,0 +1,36 @@
+
+.flashsales{
+    &__caption{
+        padding:10px;
+    }
+    margin:50px auto ;
+    z-index : -1 ;
+    &__card{
+        position: relative;
+        padding:10px ;
+        &__body{
+            &__name{
+                font-weight: bold;
+            }
+        }
+        &__image{
+            width:100% !important ;
+            height: 250px !important ;
+        }
+
+        &:hover &__overflow__cart{
+            opacity: 1;
+            transition: 0.6s;
+            left:20px ;
+            z-index: 99;
+            display: inline-block;
+        }
+        &:hover &__overflow__heart{
+            opacity: 1;
+            transition: 0.6s;
+            left:20px ;
+            z-index: 99;
+            display: inline-block;
+        }
+    }
+}

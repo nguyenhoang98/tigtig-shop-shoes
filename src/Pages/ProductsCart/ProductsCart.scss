@@ -1,0 +1,42 @@
+.products-cart{
+ width:70% ;
+ padding:20px ;
+ &__table{
+     width:100% ;
+     &__image{
+         width:200px ;
+         height: 150px;
+     }
+     &__name{
+         font-size: 25;
+     }
+     &__result{
+         font-size: 20px ;
+         font-weight: bold;
+     }
+ }  
+ &__caption{
+     color:orangered ;
+     font-size: 30px;
+     padding:20px ;
+     text-align:center ;
+     font-weight: bold;
+ } 
+ & td{
+     text-align:center ;
+ }
+ & tr{
+     border-bottom: 2px solid black;
+ }
+}
+table{
+    border-collapse: collapse;
+}
+.btn-reduction , 
+.btn-increase{
+    background: orange;
+}
+.btn-delete-products-cart{
+    background: black ;
+    font-size: 25px;
+}

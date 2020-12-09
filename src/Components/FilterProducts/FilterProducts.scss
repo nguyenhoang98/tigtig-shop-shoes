@@ -1,0 +1,22 @@
+.filterproducts{
+    &__title{
+        background: tomato;
+        padding:10px ;
+        color:white ;
+        text-align:center ;
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    &__rating{
+        &__item{
+            opacity: 0.5;
+        }
+    }
+}
+.LinkColor{
+    background: tomato;
+}
+.bgColorRating{
+    opacity: 1;
+}

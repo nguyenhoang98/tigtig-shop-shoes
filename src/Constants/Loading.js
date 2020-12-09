@@ -1,0 +1,2 @@
+export const SHOW_BG_LOADING = "SHOW_BG_LOADING";
+export const CLOSE_BG_LOADING = "CLOSE_BG_LOADING";

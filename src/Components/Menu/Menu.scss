@@ -1,0 +1,25 @@
+.menu{
+    width:100% ;
+    height: auto;
+    background: rgb(75, 75, 75) ;
+    margin-top:80px ;
+}
+.menu ul{
+    padding:0px; 
+    margin:0px ;
+    list-style-type: none;
+}
+.menu ul li{
+    float:left ;
+}
+.menu ul li a{
+    padding:10px 16px ;
+    display: block;
+    float:left ;
+    color:white ;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.action{
+    border-bottom: 5px solid red;
+}

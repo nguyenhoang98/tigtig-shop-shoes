@@ -1,0 +1,17 @@
+.product-title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.product-title::after{
+    content: '\25B4';
+    transform: rotate(-45deg);
+    padding-left:20px ;
+}
+.collapse-action{
+    color:orangered ;
+}
+.collapse-action::after{
+    content: '\25BE';
+    transform: rotate(-45deg);
+    padding-left:20px ;
+}
