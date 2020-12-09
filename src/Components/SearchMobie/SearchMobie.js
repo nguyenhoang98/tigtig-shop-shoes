@@ -28,7 +28,7 @@ function SearchMobie(props) {
       <div>
         <Redirect
           to={{
-            pathname: `/result-search-products/${queryString.q}`,
+            pathname: `/tigtig-shop-shoes/result-search-products/${queryString.q}`,
             state: queryString,
           }}
         />

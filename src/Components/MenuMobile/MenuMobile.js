@@ -27,7 +27,7 @@ function MenuMobile(props) {
           </li>
           <li>
             <NavLink
-              to="/"
+              to="/tigtig-shop-shoes"
               activeStyle={{
                 borderBottom: "2px solid green",
               }}
@@ -37,7 +37,7 @@ function MenuMobile(props) {
           </li>
           <li>
             <NavLink
-              to="/MenShoes"
+              to="/tigtig-shop-shoes/MenShoes"
               activeStyle={{
                 borderBottom: "2px solid red",
               }}
@@ -47,7 +47,7 @@ function MenuMobile(props) {
           </li>
           <li>
             <NavLink
-              to="/WomonShoes"
+              to="/tigtig-shop-shoes/WomonShoes"
               activeStyle={{
                 borderBottom: "2px solid red",
               }}
@@ -57,7 +57,7 @@ function MenuMobile(props) {
           </li>
           <li>
             <NavLink
-              to="/SportShoes"
+              to="/tigtig-shop-shoes/SportShoes"
               activeStyle={{
                 borderBottom: "2px solid red",
               }}

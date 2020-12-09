@@ -10,37 +10,37 @@ import SearchMobileContainers from "./Containers/SearchMobileContainers";
 const routers = [
   {
     component: () => <HomeContainers />,
-    path: "/",
+    path: "/tigtig-shop-shoes",
     exact: true,
   },
   {
     component: () => <MenShoesContainers />,
-    path: "/MenShoes",
+    path: "/tigtig-shop-shoes/MenShoes",
     exact: false,
   },
   {
     component: () => <SportShoesContainers />,
-    path: "/SportShoes",
+    path: "/tigtig-shop-shoes/SportShoes",
     exact: false,
   },
   {
     component: () => <WomonShoesContainers />,
-    path: "/WomonShoes",
+    path: "/tigtig-shop-shoes/WomonShoes",
     exact: false,
   },
   {
     component: () => <ProductsDetailtContainers />,
-    path: "/products-detailt/:name",
+    path: "/tigtig-shop-shoes/products-detailt/:name",
     exact: false,
   },
   {
     component: () => <ProductsCartContainers />,
-    path: "/products-cart",
+    path: "/tigtig-shop-shoes/products-cart",
     exact: false,
   },
   {
     component: () => <ResultSearchContainers />,
-    path: "/result-search-products/:name",
+    path: "/tigtig-shop-shoes/result-search-products/:name",
     exact: false,
   },
   {
