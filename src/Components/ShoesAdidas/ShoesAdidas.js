@@ -36,7 +36,7 @@ function ShoesAdidas(props) {
       <div className="row">
         {adidas.map((value, index) => {
           return (
-            <div className="shoesadidas__card col-3 col-md-6" key={index}>
+            <div className="shoesadidas__card col-3 col-md-6 " key={index}>
               <div
                 style={{
                   padding: 10,
@@ -44,11 +44,14 @@ function ShoesAdidas(props) {
               >
                 <Link
                   to={{
-                    pathname: `/products-detailt/${value.name}`,
+                    pathname: `/tigtig-shop-shoes/products-detailt/${value.name}`,
                     state: value,
                   }}
                 >
-                  <img src={value.src} className="shoesadidas__card__image" />
+                  <img
+                    src={value.src}
+                    className="shoesadidas__card__image responsive-image"
+                  />
                   <div className="shoesadidas__card__body">
                     <div className="shoesadidas__card__body__rating">
                       {onShowRating(value.rating)}
@@ -58,6 +61,7 @@ function ShoesAdidas(props) {
                     </div>
                     <div className="shoesadidas__card__body__price">
                       {value.price}
+                      <sup>đ</sup>
                     </div>
                   </div>
                 </Link>

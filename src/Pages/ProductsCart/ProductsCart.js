@@ -8,7 +8,7 @@ function ProductsCart(props) {
   const { productsCart, onReductionProductCart, onDeleteProductCart } = props;
   return (
     <div className="products-cart m-auto">
-      <div className="products-cart__caption">Giỏ Hàng Của Bạn</div>
+      <div className="products-cart__caption m-md-top-5">Giỏ Hàng Của Bạn</div>
       <div className="products-cart__table">
         <table>
           <thead>

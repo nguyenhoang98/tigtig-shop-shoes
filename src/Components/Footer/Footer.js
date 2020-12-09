@@ -88,8 +88,14 @@ function Footer(props) {
               <h2>
                 <Link to="/">ĐĂNG KÝ NHẬN MAIL</Link>
               </h2>
-              <input type="text" />
-              <button>Submit</button>
+              <input
+                type="text"
+                style={{
+                  width: "100%",
+                }}
+                className="footer__input"
+              />
+              <button className="btn btn-submit">Gửi</button>
             </div>
             <div
               className="col-6 col-md-12"
@@ -100,6 +106,9 @@ function Footer(props) {
               <img
                 src="https://ananas.vn/wp-content/themes/ananas/fe-assets/images/svg/Logo_Ananas_Footer.svg"
                 className="footer__logo__image"
+                style={{
+                  width: "100%",
+                }}
               />
             </div>
           </div>

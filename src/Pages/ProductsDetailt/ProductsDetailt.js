@@ -22,13 +22,13 @@ function ProductsDetailt(props) {
   }
   return (
     <div className="products-detail">
-      <div className="products-detail row w-8 m-auto">
-        <div className="products-detail__left col-6">
+      <div className="products-detail row w-8 m-auto w-s-10">
+        <div className="products-detail__left col-6 col-md-12">
           <Slider asNavFor={nav2} ref={(c) => setNav1(c)}>
             {slideShow.map((value, index) => {
               return (
                 <div className="products-detail__left__slide-top">
-                  <img src={value} className="image" />
+                  <img src={value} className="products-detail__image" />
                 </div>
               );
             })}
@@ -44,13 +44,13 @@ function ProductsDetailt(props) {
             {slideShow.map((value, index) => {
               return (
                 <div className="products-detail__right-bottom">
-                  <img src={value} className="image" />
+                  <img src={value} className="products-detail__image" />
                 </div>
               );
             })}
           </Slider>
         </div>
-        <div className="products-detail__right col-6">
+        <div className="products-detail__right col-6 col-md-12">
           <div className="products-detail__right__name">{state.name}</div>
           <div className="products-detail__right__label">{state.label}</div>
           <div className="products-detail__right__price">{state.price}VNĐ</div>

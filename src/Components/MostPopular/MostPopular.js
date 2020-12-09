@@ -81,11 +81,14 @@ function MostPopular(props) {
             <div className="mostpopular__card" key={value.id}>
               <Link
                 to={{
-                  pathname: `/products-detailt/${value.name}`,
+                  pathname: `/tigtig-shop-shoes/products-detailt/${value.name}`,
                   state: value,
                 }}
               >
-                <img src={value.src} className="mostpopular__card__image" />
+                <img
+                  src={value.src}
+                  className="mostpopular__card__image responsive-image"
+                />
                 <div className="mostpopular__card__body">
                   <div className="mostpopular__card__body__rating">
                     {onShowRating(value.rating)}

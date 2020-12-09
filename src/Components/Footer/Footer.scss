@@ -11,4 +11,12 @@
     &__link a:hover{
        color : rgb(126, 126, 126) ;
     }
+    &__input{
+        padding:6px ;
+    }
+}
+
+.btn-submit{
+    background: orangered;
+    color:black ;
 }

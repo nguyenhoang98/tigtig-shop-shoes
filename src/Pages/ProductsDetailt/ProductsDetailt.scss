@@ -1,4 +1,8 @@
 .products-detail{
+    &__image{
+        width:100% ;
+        height: 100%;
+    }
     padding:20px ;
         &__left{
             &__slide-top{
@@ -35,10 +39,6 @@
             }
         }
 
-}
-.image{
-    width:100% ;
-    height: 100%;
 }
 .btn-add-to-cart ,
 .btn-shop-product{

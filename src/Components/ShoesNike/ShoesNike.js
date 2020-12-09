@@ -44,11 +44,14 @@ function ShoesNike(props) {
               >
                 <Link
                   to={{
-                    pathname: `/products-detailt/${value.name}`,
+                    pathname: `/tigtig-shop-shoes/products-detailt/${value.name}`,
                     state: value,
                   }}
                 >
-                  <img src={value.src} className="shoesnike__card__image" />
+                  <img
+                    src={value.src}
+                    className="shoesnike__card__image responsive-image"
+                  />
                   <div className="shoesnike__card__body">
                     <div className="shoesnike__card__body__rating">
                       {onShowRating(value.rating)}
@@ -58,6 +61,7 @@ function ShoesNike(props) {
                     </div>
                     <div className="shoesnike__card__body__price">
                       {value.price}
+                      <sup>đ</sup>
                     </div>
                   </div>
                 </Link>

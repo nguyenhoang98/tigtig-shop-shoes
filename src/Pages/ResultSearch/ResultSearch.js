@@ -41,7 +41,7 @@ function ResultSearch(props) {
                   >
                     <img
                       src={value.src}
-                      className="resultSearch__card__image"
+                      className="resultSearch__card__image responsive-image"
                       alt="image"
                     />
                     <div className="resultSearch__card__body">

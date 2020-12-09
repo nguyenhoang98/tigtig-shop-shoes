@@ -51,7 +51,7 @@ function WomonShoes(props) {
                 >
                   <img
                     src={value.src}
-                    className="womonshoes__card__image"
+                    className="womonshoes__card__image responsive-image"
                     alt="image"
                   />
                   <div className="womonshoes__card__body">

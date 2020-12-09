@@ -135,7 +135,10 @@ function NavBar(props) {
               </Link>
             </li>
             <li onMouseEnter={hoverOpenCart} onMouseLeave={outCloseCart}>
-              <Link to="/products-cart" className="navbar__action__cart">
+              <Link
+                to="/tigtig-shop-shoes/products-cart"
+                className="navbar__action__cart"
+              >
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                 &nbsp;{" "}
                 <span className="navbar__action__cart__text">

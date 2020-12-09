@@ -54,7 +54,7 @@ function SportShoes(props) {
                 >
                   <img
                     src={value.src}
-                    className="sportshoes__card__image"
+                    className="sportshoes__card__image responsive-image"
                     alt="image"
                   />
                   <div className="sportshoes__card__body">

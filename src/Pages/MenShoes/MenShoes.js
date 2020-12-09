@@ -52,7 +52,7 @@ function MenShoes(props) {
                 >
                   <img
                     src={value.src}
-                    className="menshoes__card__image"
+                    className="menshoes__card__image responsive-image"
                     alt="image"
                   />
                   <div className="menshoes__card__body">
