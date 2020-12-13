@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tigtig-shop-shoes/static/css/main.cda02c72.chunk.css",
-    "main.js": "/tigtig-shop-shoes/static/js/main.ecfab557.chunk.js",
-    "main.js.map": "/tigtig-shop-shoes/static/js/main.ecfab557.chunk.js.map",
-    "runtime-main.js": "/tigtig-shop-shoes/static/js/runtime-main.f0231679.js",
-    "runtime-main.js.map": "/tigtig-shop-shoes/static/js/runtime-main.f0231679.js.map",
-    "static/js/2.a63096cc.chunk.js": "/tigtig-shop-shoes/static/js/2.a63096cc.chunk.js",
-    "static/js/2.a63096cc.chunk.js.map": "/tigtig-shop-shoes/static/js/2.a63096cc.chunk.js.map",
-    "static/js/3.c077583e.chunk.js": "/tigtig-shop-shoes/static/js/3.c077583e.chunk.js",
-    "static/js/3.c077583e.chunk.js.map": "/tigtig-shop-shoes/static/js/3.c077583e.chunk.js.map",
+    "main.css": "/tigtig-shop-shoes/static/css/main.53c6aba5.chunk.css",
+    "main.js": "/tigtig-shop-shoes/static/js/main.6d0b0110.chunk.js",
+    "main.js.map": "/tigtig-shop-shoes/static/js/main.6d0b0110.chunk.js.map",
+    "runtime-main.js": "/tigtig-shop-shoes/static/js/runtime-main.18674116.js",
+    "runtime-main.js.map": "/tigtig-shop-shoes/static/js/runtime-main.18674116.js.map",
+    "static/js/2.2cc93f3c.chunk.js": "/tigtig-shop-shoes/static/js/2.2cc93f3c.chunk.js",
+    "static/js/2.2cc93f3c.chunk.js.map": "/tigtig-shop-shoes/static/js/2.2cc93f3c.chunk.js.map",
+    "static/js/3.3968000c.chunk.js": "/tigtig-shop-shoes/static/js/3.3968000c.chunk.js",
+    "static/js/3.3968000c.chunk.js.map": "/tigtig-shop-shoes/static/js/3.3968000c.chunk.js.map",
     "index.html": "/tigtig-shop-shoes/index.html",
-    "static/css/main.cda02c72.chunk.css.map": "/tigtig-shop-shoes/static/css/main.cda02c72.chunk.css.map",
-    "static/js/2.a63096cc.chunk.js.LICENSE.txt": "/tigtig-shop-shoes/static/js/2.a63096cc.chunk.js.LICENSE.txt",
+    "static/css/main.53c6aba5.chunk.css.map": "/tigtig-shop-shoes/static/css/main.53c6aba5.chunk.css.map",
+    "static/js/2.2cc93f3c.chunk.js.LICENSE.txt": "/tigtig-shop-shoes/static/js/2.2cc93f3c.chunk.js.LICENSE.txt",
     "static/media/loading_2.8b4a0429.gif": "/tigtig-shop-shoes/static/media/loading_2.8b4a0429.gif",
     "static/media/slick-theme.scss": "/tigtig-shop-shoes/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f0231679.js",
-    "static/js/2.a63096cc.chunk.js",
-    "static/css/main.cda02c72.chunk.css",
-    "static/js/main.ecfab557.chunk.js"
+    "static/js/runtime-main.18674116.js",
+    "static/js/2.2cc93f3c.chunk.js",
+    "static/css/main.53c6aba5.chunk.css",
+    "static/js/main.6d0b0110.chunk.js"
   ]
 }
