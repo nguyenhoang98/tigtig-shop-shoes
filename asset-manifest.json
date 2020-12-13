@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tigtig-shop-shoes/static/css/main.53c6aba5.chunk.css",
-    "main.js": "/tigtig-shop-shoes/static/js/main.6d0b0110.chunk.js",
-    "main.js.map": "/tigtig-shop-shoes/static/js/main.6d0b0110.chunk.js.map",
+    "main.js": "/tigtig-shop-shoes/static/js/main.9eebe674.chunk.js",
+    "main.js.map": "/tigtig-shop-shoes/static/js/main.9eebe674.chunk.js.map",
     "runtime-main.js": "/tigtig-shop-shoes/static/js/runtime-main.18674116.js",
     "runtime-main.js.map": "/tigtig-shop-shoes/static/js/runtime-main.18674116.js.map",
     "static/js/2.2cc93f3c.chunk.js": "/tigtig-shop-shoes/static/js/2.2cc93f3c.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.18674116.js",
     "static/js/2.2cc93f3c.chunk.js",
     "static/css/main.53c6aba5.chunk.css",
-    "static/js/main.6d0b0110.chunk.js"
+    "static/js/main.9eebe674.chunk.js"
   ]
 }
