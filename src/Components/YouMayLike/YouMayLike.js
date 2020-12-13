@@ -11,35 +11,8 @@ const settings = {
   dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
   slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+  slidesToShow: 4,
 };
 function YouMayLike(props) {
   const { youMayLikeData, onAddProductToCart } = props;
@@ -53,11 +26,14 @@ function YouMayLike(props) {
           style={{
             color: "tomato",
           }}
+          key={i}
         ></i>
       );
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i className="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
@@ -88,6 +64,7 @@ function YouMayLike(props) {
                 <img
                   src={value.src}
                   className="youmaylike__card__image responsive-image"
+                  alt="Ảnh"
                 />
                 <div className="youmaylike__card__body">
                   <div className="youmaylike__card__body__rating">

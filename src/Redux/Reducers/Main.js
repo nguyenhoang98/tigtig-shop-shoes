@@ -9,6 +9,8 @@ import Loading from "./Loading";
 import Menu from "./Menu";
 import ResultSearchProducts from "./ResultSearchProducts";
 import SearchMobile from "./SearchMobile";
+import NikeData from "./Nike";
+import AdidasData from "./Adidas";
 const appReducers = combineReducers({
   HomeSlide: HomeSlide,
   HomeProducts: HomeProducts,
@@ -20,5 +22,7 @@ const appReducers = combineReducers({
   Menu: Menu,
   ResultSearchProducts: ResultSearchProducts,
   SearchMobile: SearchMobile,
+  NikeData: NikeData,
+  AdidasData: AdidasData,
 });
 export default appReducers;

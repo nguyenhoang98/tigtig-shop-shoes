@@ -9,35 +9,8 @@ var settings = {
   dots: true,
   infinite: false,
   speed: 500,
-  slidesToShow: 4,
   slidesToScroll: 4,
-  initialSlide: 0,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+  slidesToShow: 4,
 };
 FlashSales.propTypes = {};
 function FlashSales(props) {
@@ -52,16 +25,19 @@ function FlashSales(props) {
           style={{
             color: "tomato",
           }}
+          key={i}
         ></i>
       );
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i HomeProducts="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
   return (
-    <div className="flashsales w-8 m-auto">
+    <div className="flashsales w-8 m-auto" id="flashsale">
       <div className="flashsales__caption">
         <h2>
           <i
@@ -87,6 +63,7 @@ function FlashSales(props) {
                 <img
                   src={value.src}
                   className="flashsales__card__image responsive-image"
+                  alt="Ảnh"
                 />
                 <div className="flashsales__card__body">
                   <div className="flashsales__card__body__rating">

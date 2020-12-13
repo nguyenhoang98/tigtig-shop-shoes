@@ -21,7 +21,7 @@ function SportShoesContainers(props) {
   });
   useEffect(() => {
     const queryString = qs.stringify(filter);
-    const url = `https://q9vjn.sse.codesandbox.io/Sport?${queryString}`;
+    const url = `https://0yd7f.sse.codesandbox.io/Sport?${queryString}`;
     fetchApiShoesSport(url);
   }, [filter]);
   useEffect(() => {

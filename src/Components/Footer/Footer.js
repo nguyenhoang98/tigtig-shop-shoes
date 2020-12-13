@@ -22,80 +22,78 @@ function Footer(props) {
               <h2>
                 <Link to="3">Sản Phẩm</Link>
               </h2>
-              <Link to="#">Giày Nam</Link>
-              <Link to="#">Giày Nữ</Link>
-              <Link to="#">Thời Trang </Link>
+              <Link to="/tigtig-shop-shoes/MenShoes">Giày Nam</Link>
+              <Link to="/tigtig-shop-shoes/WomonShoes">Giày Nữ</Link>
+              <Link to="/tigtig-shop-shoes/SportShoes">Thời Trang </Link>
               <Link to="#">Sale-off</Link>
             </div>
             <div className="col-3 col-md-6">
               <h2>
-                <Link to="#">Về Công Ty</Link>
+                <Link to="/tigtig-shop-shoes">Về Công Ty</Link>
               </h2>
-              <Link to="#">tuyển Dụng</Link>
-              <Link to="#">Liên hệ chuyển nhượng</Link>
-              <Link to="#">Về BEYL</Link>
+              <Link to="/tigtig-shop-shoes">tuyển Dụng</Link>
+              <Link to="/tigtig-shop-shoes">Liên hệ chuyển nhượng</Link>
+              <Link to="/tigtig-shop-shoes">Về BEYL</Link>
             </div>
             <div className="col-3 col-md-6">
               <h2>
                 <Link to="#">Hỗ trợ</Link>
               </h2>
-              <Link to="#">FAQS</Link>
-              <Link to="#">Bảo Mật Thông Tin</Link>
-              <Link to="#">Chính Sách Chung </Link>
-              <Link to="#">Tra cứu Đơn Hàng</Link>
+              <Link to="/tigtig-shop-shoes">FAQS</Link>
+              <Link to="/tigtig-shop-shoes">Bảo Mật Thông Tin</Link>
+              <Link to="/tigtig-shop-shoes">Chính Sách Chung </Link>
+              <Link to="/tigtig-shop-shoes">Tra cứu Đơn Hàng</Link>
             </div>
             <div className="col-3 col-md-6">
               <h2>
-                <Link to="#">Liên Hệ</Link>
+                <Link to="/tigtig-shop-shoes">Liên Hệ</Link>
               </h2>
-              <Link to="#">Email Góp Ý </Link>
-              <Link to="#">HotLine</Link>
+              <Link to="/tigtig-shop-shoes">Email Góp Ý </Link>
+              <Link to="/tigtig-shop-shoes">HotLine</Link>
             </div>
             <div className="col-3 col-md-6">
               <h2>
-                <Link to="#">BEYL SOCIAL</Link>
+                <Link to="/tigtig-shop-shoes">BEYL SOCIAL</Link>
               </h2>
               <Link
-                to="#"
+                to="/tigtig-shop-shoes"
                 style={{
                   display: "inline-block",
                   fontSize: 30,
                 }}
               >
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i className="fa fa-facebook-official" aria-hidden="true"></i>
               </Link>
               <Link
-                to="#"
+                to="/tigtig-shop-shoes"
                 style={{
                   display: "inline-block",
                   fontSize: 30,
                   margin: "0 20px ",
                 }}
               >
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i className="fa fa-instagram" aria-hidden="true"></i>
               </Link>
               <Link
-                to="#"
+                to="/tigtig-shop-shoes"
                 style={{
                   display: "inline-block",
                   fontSize: 30,
                 }}
               >
-                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <i className="fa fa-youtube-play" aria-hidden="true"></i>
               </Link>
             </div>
             <div className="col-3 col-md-6">
               <h2>
-                <Link to="/">ĐĂNG KÝ NHẬN MAIL</Link>
+                <Link to="/tigtig-shop-shoes">ĐĂNG KÝ NHẬN MAIL</Link>
               </h2>
-              <input
-                type="text"
-                style={{
-                  width: "100%",
-                }}
-                className="footer__input"
-              />
-              <button className="btn btn-submit">Gửi</button>
+              <div className="row">
+                <input type="text" className="footer__input col-10" />
+                <button className="btn btn-submit col-2">
+                  <i className="fa fa-paper-plane" aria-hidden="true"></i>
+                </button>
+              </div>
             </div>
             <div
               className="col-6 col-md-12"
@@ -109,6 +107,7 @@ function Footer(props) {
                 style={{
                   width: "100%",
                 }}
+                alt="Ảnh"
               />
             </div>
           </div>

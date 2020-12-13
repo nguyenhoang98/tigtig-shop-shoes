@@ -23,7 +23,6 @@ function SearchMobie(props) {
     closeSearchMobile();
   }
   if (queryString.q) {
-    console.log(queryString.q);
     return (
       <div>
         <Redirect
@@ -67,6 +66,7 @@ function SearchMobie(props) {
               value={keySearch}
               onChange={handleOnchange}
               className="searchmobile__content__input"
+              placeholder="Tìm Kiếm ..."
             />
             <img src={search} className="searchmobile__content__search" />
           </form>

@@ -15,6 +15,10 @@ import {
   fetch_api_shoes_sport_err,
   fetch_api_search_products_success,
   fetch_api_search_products_err,
+  fetch_api_nike_page_success,
+  fetch_api_nike_page_err,
+  fetch_api_adidas_page_success,
+  fetch_api_adidas_page_err,
 } from "../Redux/Actions/Actions";
 import {
   add_to_cart_err,
@@ -25,8 +29,8 @@ import {
   update_to_cart_success,
 } from "../Redux/Actions/ProductsCartAction";
 import { close_bg_loading, show_bg_loading } from "../Redux/Actions/Loading";
-const url_slide = "https://q9vjn.sse.codesandbox.io/slide";
-const url_home_products = "https://q9vjn.sse.codesandbox.io/HomeProducts";
+const url_slide = "https://0yd7f.sse.codesandbox.io/slide";
+const url_home_products = "https://0yd7f.sse.codesandbox.io/HomeProducts";
 function* watchApihomeSlideSaga() {
   while (true) {
     yield take(types.FETCH_API_HOME_SLIDE);
@@ -133,7 +137,7 @@ function* watchDeleteCartSagas(data) {
   }
 }
 
-function* wacchApiSearchProducts(data) {
+function* wacchApiSearchProducts() {
   while (true) {
     const result = yield take(types.FETCH_API_SEARCH_PRODUCTS);
     yield put(show_bg_loading());
@@ -148,6 +152,30 @@ function* wacchApiSearchProducts(data) {
     yield put(close_bg_loading());
   }
 }
+function* watchApiNikePageSagas() {
+  while (true) {
+    const result = yield take(types.FETCH_API_NIKE_PAGE);
+    const { url } = result.payload;
+    const response = yield call(getData, url);
+    if (response.status === 200) {
+      yield put(fetch_api_nike_page_success(response.data));
+    } else {
+      yield put(fetch_api_nike_page_err("404-Lỗi"));
+    }
+  }
+}
+function* watchApiAdidasPageSagas() {
+  while (true) {
+    const result = yield take(types.FETCH_API_ADIDAS_PAGE);
+    const { url } = result.payload;
+    const response = yield call(getData, url);
+    if (response.status === 200) {
+      yield put(fetch_api_adidas_page_success(response.data));
+    } else {
+      yield put(fetch_api_adidas_page_err("404-Lỗi"));
+    }
+  }
+}
 function* rootSaga() {
   yield fork(watchApihomeSlideSaga);
   yield fork(watchApiHomeProductsSagas);
@@ -158,5 +186,7 @@ function* rootSaga() {
   yield takeLatest(typesProducts.UPDATE_TO_CART, watchUpdateToCartSagas);
   yield takeLatest(typesProducts.DELETE_PRODUCTS_CART, watchDeleteCartSagas);
   yield fork(wacchApiSearchProducts);
+  yield fork(watchApiNikePageSagas);
+  yield fork(watchApiAdidasPageSagas);
 }
 export default rootSaga;

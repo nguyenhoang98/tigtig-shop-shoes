@@ -1,0 +1,67 @@
+.login{
+    width:300px; 
+    height: auto;
+    position: absolute;
+    top:50% ;
+    left:50% ;
+    transform: translate(-50% , -50%);
+    &__title{
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &__form-group{
+        margin:20px 0px ;
+        position: relative;
+        &__icon{
+            position: absolute;
+            left:5px; 
+            top:10px ;
+            width:25px ;
+            height: 25px;
+        }
+    }
+    &__label{
+        display: block;
+    }
+    &__user , &__password{
+       padding:12px 45px ;
+       width:100% ;
+       border:2px solid #ccc ;
+       border-radius: 6px;
+       outline: none;
+    } 
+}
+.btn-login{
+    display: block;
+    width:100% ;
+    background: #ea5271;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn-reset{
+    display: block;
+    width:100% ;
+    background: red;
+    font-size: 18px;
+}
+.btn-google{
+    display: block;
+    width:100% ;
+    background: white;
+    font-size: 18px;
+    color:black ;
+    border:2px solid #ccc ;
+    border-radius: 6px;
+    outline: none;
+}
+.btn-facebook{
+    display: block;
+    width:100% ;
+    background: white;
+    font-size: 18px;
+    color:black ;
+    border:2px solid #ccc ;
+    border-radius: 6px;
+    outline: none;
+}

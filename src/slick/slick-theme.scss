@@ -11,12 +11,12 @@ $slick-font-path: "./fonts/" !default;
 $slick-font-family: "slick" !default;
 $slick-loader-path: "./" !default;
 $slick-arrow-color: white !default;
-$slick-dot-color: black !default;
+$slick-dot-color: orangered !default;
 $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: "\2190" !default;
 $slick-next-character: "\2192" !default;
 $slick-dot-character: "\2022" !default;
-$slick-dot-size: 6px !default;
+$slick-dot-size: 16px !default;
 $slick-opacity-default: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
@@ -64,10 +64,10 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 50px;
+    width: 50px;
     line-height: 0px;
-    font-size: 0px;
+    font-size: 50px ;
     cursor: pointer;
     background: transparent;
     color: transparent;
@@ -111,7 +111,9 @@ $slick-opacity-not-active: 0.25 !default;
         content: $slick-prev-character;
         [dir="rtl"] & {
             content: $slick-next-character;
-        }
+        } ;
+        font-size: 30px;
+        color :black ;
     }
 }
 
@@ -125,8 +127,9 @@ $slick-opacity-not-active: 0.25 !default;
         content: $slick-next-character;
         [dir="rtl"] & {
             content: $slick-prev-character;
-        }
-    }
+        } ;
+        font-size: 30px;
+    } 
 }
 
 /* Dots */
@@ -137,7 +140,7 @@ $slick-opacity-not-active: 0.25 !default;
 
 .slick-dots {
     position: absolute;
-    bottom: -25px;
+    bottom: 10px;
     list-style: none;
     display: block;
     text-align: center;

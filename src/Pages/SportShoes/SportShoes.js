@@ -37,9 +37,9 @@ function SportShoes(props) {
         <FilterProducts filterRating={filterRating} filterColor={filterColor} />
       </div>
       <div className="sportshoes__products row col-10 col-md-12">
-        {shoesSport.map((value) => {
+        {shoesSport.map((value, index) => {
           return (
-            <div className="sportshoes__card col-3 col-md-6">
+            <div className="sportshoes__card col-3 col-md-6" key={index}>
               <div
                 className="sportshoes__card__animation"
                 style={{

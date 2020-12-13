@@ -1,11 +1,11 @@
 .navbar{
     width:100% ;
+    height: auto;
     background: white ;
-    border:1px solid #ccc ;
     position: fixed;
     top:0px; 
     left:0px ;
-    z-index: 99 ;
+    z-index: 9999 ;
     & a{
         padding:10px 6px ;
         color:rgb(59, 59, 59)   ;
@@ -51,7 +51,8 @@
         }
     }
     &__action{
-        line-height: 50px; 
+        padding-top:25px ;
+        text-align: center;
         & ul{
             padding:0px; 
             margin:0px ;
@@ -64,10 +65,12 @@
         &__cart{
             &__badge{
                 position: absolute;
-                top:-15px ;
+                top:-20px ;
                 right:-6px;
                 border-radius: 50%;
                 color:black ;
+                border:1px solid black ;
+                padding:3px 6px;
             }
         }
     }

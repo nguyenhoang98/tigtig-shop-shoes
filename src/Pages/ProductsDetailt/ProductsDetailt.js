@@ -25,10 +25,14 @@ function ProductsDetailt(props) {
       <div className="products-detail row w-8 m-auto w-s-10">
         <div className="products-detail__left col-6 col-md-12">
           <Slider asNavFor={nav2} ref={(c) => setNav1(c)}>
-            {slideShow.map((value, index) => {
+            {slideShow.map((value) => {
               return (
-                <div className="products-detail__left__slide-top">
-                  <img src={value} className="products-detail__image" />
+                <div className="products-detail__left__slide-top" key="a">
+                  <img
+                    src={value}
+                    className="products-detail__image"
+                    alt="Ảnh"
+                  />
                 </div>
               );
             })}
@@ -43,8 +47,12 @@ function ProductsDetailt(props) {
           >
             {slideShow.map((value, index) => {
               return (
-                <div className="products-detail__right-bottom">
-                  <img src={value} className="products-detail__image" />
+                <div className="products-detail__right-bottom" key={value}>
+                  <img
+                    src={value}
+                    className="products-detail__image"
+                    alt="Ảnh"
+                  />
                 </div>
               );
             })}
@@ -63,14 +71,14 @@ function ProductsDetailt(props) {
               onClick={() => onUpdateCount(-1)}
               disabled={count === 1}
             >
-              <i class="fa fa-minus" aria-hidden="true"></i>
+              <i className="fa fa-minus" aria-hidden="true"></i>
             </button>
             <span> {count} </span>
             <button
               className="btn btn-increase"
               onClick={() => onUpdateCount(1)}
             >
-              <i class="fa fa-plus" aria-hidden="true"></i>
+              <i className="fa fa-plus" aria-hidden="true"></i>
             </button>
           </div>
           <div className="products-detail__right__control">

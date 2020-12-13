@@ -4,7 +4,6 @@ import search from "../../acssets/image/search04.png";
 import PropTypes from "prop-types";
 import ModalProductsContainers from "../../Containers/ModalProductsContainers";
 import { Link, Redirect } from "react-router-dom";
-
 NavBar.propTypes = {};
 
 function NavBar(props) {
@@ -24,14 +23,16 @@ function NavBar(props) {
     setkeySearch(e.target.value);
   }
   function handleOnsubmit(e) {
-    console.log("Hello");
     e.preventDefault();
     setqueryString({
       q: keySearch,
     });
+    handleOnResetForm();
+  }
+  function handleOnResetForm() {
+    setkeySearch("");
   }
   if (queryString.q) {
-    console.log(queryString.q);
     return (
       <div>
         <Redirect
@@ -46,19 +47,20 @@ function NavBar(props) {
               className="btn btn-toggle-menu"
               onClick={onToggleMenuMobile}
             >
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i className="fa fa-bars" aria-hidden="true"></i>
             </button>
           </div>
           <div className="navbar__logo col-2 col-md-8 p-10">
             <img
               src="https://bshoes.herokuapp.com/static/media/Shoes_logo.ea2a5c2e.png"
               className="navbar__logo__img"
+              alt="Ảnh"
             />
-            <a href="#" className="navbar__logo__text">
+            <Link to="/tigtig-shop-shoes" className="navbar__logo__text">
               BEYL
-            </a>
+            </Link>
           </div>
-          <div className="navbar__control col-7 p-10">
+          <div className="navbar__control col-9 p-10">
             <form onSubmit={handleOnsubmit}>
               <input
                 type="text"
@@ -68,23 +70,27 @@ function NavBar(props) {
                 onChange={handleOnchange}
               />
             </form>
-            <img src={search} className="navbar__control__search" />
+            <img src={search} className="navbar__control__search" alt="ảnh" />
           </div>
-          <div className="navbar__action col-3 col-md-2 p-10">
+          <div className="navbar__action col-1 col-md-2 p-10">
             <ul>
               <li className="user">
-                <Link to="/">
+                <Link to="/tigtig-shop-shoes/login">
                   <i className="fa fa-user" aria-hidden="true"></i>
-                  &nbsp; <span>Đăng nhập / Đăng kí</span>
+                  &nbsp; <span>Login</span>
                 </Link>
               </li>
-              <li onMouseEnter={hoverOpenCart} onMouseLeave={outCloseCart}>
-                <Link to="/products-cart" className="navbar__action__cart">
+              <li
+                onMouseEnter={hoverOpenCart}
+                onMouseLeave={outCloseCart}
+                onMouseUp={outCloseCart}
+              >
+                <Link
+                  to="/tigtig-shop-shoes/products-cart"
+                  className="navbar__action__cart"
+                >
                   <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                   &nbsp;{" "}
-                  <span className="navbar__action__cart__text">
-                    Giỏ hàng của tôi
-                  </span>
                   <span className="navbar__action__cart__badge">
                     {" "}
                     {productsCart.length}
@@ -102,19 +108,20 @@ function NavBar(props) {
       <div className="navbar row">
         <div className="navbar__menu col-md-2">
           <button className="btn btn-toggle-menu" onClick={onToggleMenuMobile}>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i className="fa fa-bars" aria-hidden="true"></i>
           </button>
         </div>
         <div className="navbar__logo col-2 col-md-8 p-10">
           <img
             src="https://bshoes.herokuapp.com/static/media/Shoes_logo.ea2a5c2e.png"
             className="navbar__logo__img"
+            alt="Ảnh"
           />
-          <a href="#" className="navbar__logo__text">
+          <Link to="/tigtig-shop-shoes" className="navbar__logo__text">
             BEYL
-          </a>
+          </Link>
         </div>
-        <div className="navbar__control col-7 p-10">
+        <div className="navbar__control col-8 p-10">
           <form onSubmit={handleOnsubmit}>
             <input
               type="text"
@@ -124,26 +131,27 @@ function NavBar(props) {
               onChange={handleOnchange}
             />
           </form>
-          <img src={search} className="navbar__control__search" />
+          <img src={search} className="navbar__control__search" alt="Ảnh" />
         </div>
-        <div className="navbar__action col-3 col-md-2 p-10">
+        <div className="navbar__action col-2 col-md-2 p-10">
           <ul>
             <li className="user">
-              <Link to="/">
+              <Link to="/tigtig-shop-shoes/login">
                 <i className="fa fa-user" aria-hidden="true"></i>
-                &nbsp; <span>Đăng nhập / Đăng kí</span>
+                &nbsp; <span>Login</span>
               </Link>
             </li>
-            <li onMouseEnter={hoverOpenCart} onMouseLeave={outCloseCart}>
+            <li
+              onMouseOver={hoverOpenCart}
+              onMouseLeave={outCloseCart}
+              onMouseUp={outCloseCart}
+            >
               <Link
                 to="/tigtig-shop-shoes/products-cart"
                 className="navbar__action__cart"
               >
                 <i className="fa fa-shopping-cart" aria-hidden="true"></i>
                 &nbsp;{" "}
-                <span className="navbar__action__cart__text">
-                  Giỏ hàng của tôi
-                </span>
                 <span className="navbar__action__cart__badge">
                   {" "}
                   {productsCart.length}

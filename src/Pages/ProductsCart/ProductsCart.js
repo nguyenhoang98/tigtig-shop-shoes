@@ -23,7 +23,7 @@ function ProductsCart(props) {
           <tbody>
             {productsCart.map((value, index) => {
               return (
-                <tr>
+                <tr key={index}>
                   <td>
                     <img
                       src={value.products.src}

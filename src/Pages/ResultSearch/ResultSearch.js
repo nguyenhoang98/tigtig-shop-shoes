@@ -6,14 +6,16 @@ import PropTypes from "prop-types";
 ResultSearch.propTypes = {};
 
 function ResultSearch(props) {
-  const { products, onAddProductsToCart } = props;
+  const { products, onAddProductsToCart, keySearch } = props;
   function onShowRating(rating) {
     const result = [];
     for (var i = 1; i <= rating; i++) {
-      result.push(<i className="fa fa-star" aria-hidden="true"></i>);
+      result.push(<i className="fa fa-star" aria-hidden="true" key={i}></i>);
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i className="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
@@ -21,12 +23,12 @@ function ResultSearch(props) {
     return (
       <div className="resultSearch m-auto w-8">
         <div className="resultSearch__title">
-          <h2>Kết Quả tìm Kiếm</h2>
+          <h2>Kết Quả tìm Kiếm {keySearch} </h2>
         </div>
         <div className="resultSearch__products row">
           {products.map((value, index) => {
             return (
-              <div className="resultSearch__card col-3 col-s-6">
+              <div className="resultSearch__card col-3 col-s-6" key={index}>
                 <div
                   className="resultSearch__card__animation"
                   style={{

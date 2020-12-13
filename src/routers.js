@@ -6,8 +6,10 @@ import SportShoesContainers from "./Containers/SportShoesContainers";
 import ProductsCartContainers from "./Containers/ProductsCartContainers";
 import ProductsDetailtContainers from "./Containers/ProductsDetailtContainers";
 import ResultSearchContainers from "./Containers/ResultSearchContainers";
-import SearchMobileContainers from "./Containers/SearchMobileContainers";
-const routers = [
+import NikeShoesContainer from "./Containers/NikeShoesContainer";
+import AdidasContainers from "./Containers/AdidasContainers";
+import LoginContainers from "./Containers/LoginContainers";
+export const routers = [
   {
     component: () => <HomeContainers />,
     path: "/tigtig-shop-shoes",
@@ -39,8 +41,23 @@ const routers = [
     exact: false,
   },
   {
+    component: () => <LoginContainers />,
+    path: "/tigtig-shop-shoes/login",
+    exact: false,
+  },
+  {
     component: () => <ResultSearchContainers />,
     path: "/tigtig-shop-shoes/result-search-products/:name",
+    exact: false,
+  },
+  {
+    component: () => <NikeShoesContainer />,
+    path: "/tigtig-shop-shoes/nike",
+    exact: false,
+  },
+  {
+    component: () => <AdidasContainers />,
+    path: "/tigtig-shop-shoes/adidas",
     exact: false,
   },
   {
@@ -49,5 +66,3 @@ const routers = [
     exact: false,
   },
 ];
-
-export default routers;

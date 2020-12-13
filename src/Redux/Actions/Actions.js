@@ -149,3 +149,56 @@ export const fetch_api_search_products_err = (err) => {
     },
   };
 };
+
+//
+export const fetch_api_nike_page = (url) => {
+  return {
+    type: types.FETCH_API_NIKE_PAGE,
+    payload: {
+      url: url,
+    },
+  };
+};
+export const fetch_api_nike_page_success = (data) => {
+  return {
+    type: types.FETCH_API_NIKE_PAGE_SUCCESS,
+    payload: {
+      data: data,
+    },
+  };
+};
+
+export const fetch_api_nike_page_err = (err) => {
+  return {
+    type: types.FETCH_API_NIKE_PAGE_ERR,
+    payload: {
+      err: err,
+    },
+  };
+};
+//
+export const fetch_api_adidas_page = (url) => {
+  return {
+    type: types.FETCH_API_ADIDAS_PAGE,
+    payload: {
+      url: url,
+    },
+  };
+};
+export const fetch_api_adidas_page_success = (data) => {
+  return {
+    type: types.FETCH_API_ADIDAS_PAGE_SUCCESS,
+    payload: {
+      data: data,
+    },
+  };
+};
+
+export const fetch_api_adidas_page_err = (err) => {
+  return {
+    type: types.FETCH_API_ADIDAS_PAGE_ERR,
+    payload: {
+      err: err,
+    },
+  };
+};

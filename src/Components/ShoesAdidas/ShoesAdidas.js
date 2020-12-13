@@ -17,11 +17,14 @@ function ShoesAdidas(props) {
           style={{
             color: "tomato",
           }}
+          key={i}
         ></i>
       );
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i HomeProducts="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
@@ -31,7 +34,7 @@ function ShoesAdidas(props) {
       <div className="shoesadidas__title text-center">
         <h2>Giày adidas</h2>
         <hr />
-        <Link to="">Xem Thêm</Link>
+        <Link to="/tigtig-shop-shoes/adidas">Xem Thêm</Link>
       </div>
       <div className="row">
         {adidas.map((value, index) => {
@@ -51,6 +54,7 @@ function ShoesAdidas(props) {
                   <img
                     src={value.src}
                     className="shoesadidas__card__image responsive-image"
+                    alt="Ảnh"
                   />
                   <div className="shoesadidas__card__body">
                     <div className="shoesadidas__card__body__rating">

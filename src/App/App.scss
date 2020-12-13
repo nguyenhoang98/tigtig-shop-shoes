@@ -118,6 +118,9 @@ a{
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .responsive-image{
+    height: 150px !important ;
+  }
 }
 @media screen and (max-width:768px){
   .user{
@@ -216,6 +219,9 @@ a{
   .btn-shop-product{
     font-size: 17px !important ;
   }
+  .responsive-image{
+    height: 150px !important ;
+  }
 }
 @media screen and (max-width: 600px) {
   /* For tablets: */
@@ -235,7 +241,7 @@ a{
     width: 100%;
   }
   .responsive-image{
-    height: 150px !important ;
+    height: 120px !important ;
   }
   .homeslide__item__image{
     height:300px !important ;
@@ -280,6 +286,9 @@ a{
     }
   }
   .resultSearch{
+    &__title{
+      margin-top:80px ;
+    }
     &__card{
       &__body{
         &__name{

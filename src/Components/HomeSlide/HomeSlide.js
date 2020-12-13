@@ -4,6 +4,7 @@ import "../../slick/slick-theme.scss";
 import "../../slick/slick.scss";
 import PropTypes from "prop-types";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 HomeSlide.propTypes = {};
 const settings = {
   dots: true,
@@ -11,6 +12,7 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
 };
 function HomeSlide(props) {
   const { homeSlide } = props;
@@ -27,7 +29,16 @@ function HomeSlide(props) {
               />
               <div className="homeslide__item__text">
                 <h2>{value.title} </h2>
-                <button className="btn btn-shopping"> Mua Ngay </button>
+                <Link
+                  to={value.link}
+                  className="btn btn-shopping"
+                  style={{
+                    display: "inline-block",
+                  }}
+                >
+                  {" "}
+                  Mua Ngay{" "}
+                </Link>
               </div>
             </div>
           );

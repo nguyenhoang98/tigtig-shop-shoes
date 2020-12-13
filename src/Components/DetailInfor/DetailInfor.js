@@ -46,7 +46,6 @@ function DetailInfor(props) {
         <p>Size run: 35 – 46</p>
         <p>Upper: Canvas</p>
         <p>Outsole: Rubber</p>
-        <img src="https://ananas.vn/wp-content/uploads/Size-chart-1-e1559209680920.jpg" />
       </Collapse>
       <h2
         onClick={() => isToggleCollap_2(isOpenCollapse.value_2)}

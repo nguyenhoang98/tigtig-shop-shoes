@@ -20,7 +20,7 @@ function FilterProducts(props) {
   return (
     <div className="filterproducts">
       <div className="filterproducts__title">Lọc sản phẩm</div>
-      <div className="filterproducts__price">
+      {/* <div className="filterproducts__price">
         <div className="filterproducts__price__title">
           <h3>Chọn theo giá</h3>
         </div>
@@ -33,7 +33,7 @@ function FilterProducts(props) {
           <div className="filterproducts__2">500.000đ đến 1.000.000đ</div>
           <div className="filterproducts__3">1.000.000đ trở lên</div>
         </div>
-      </div>
+      </div> */}
       <hr />
       <div className="filterproducts__color">
         <div className="filterproducts__color__title">

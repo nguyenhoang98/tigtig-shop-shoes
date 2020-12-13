@@ -17,7 +17,6 @@ function SearchMobileContainers(props) {
   );
 }
 const mapStateToProps = (state) => {
-  console.log(state.searchMobile);
   return {
     searchMobile: state.SearchMobile,
   };

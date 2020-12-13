@@ -13,10 +13,13 @@
     }
     &__input{
         padding:6px ;
+        outline: none;
+        float:left ;
     }
 }
 
 .btn-submit{
-    background: orangered;
-    color:black ;
+    background: orangered ;
+    color:white ;
+    float:left ;
 }

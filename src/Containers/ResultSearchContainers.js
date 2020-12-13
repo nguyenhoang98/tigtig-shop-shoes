@@ -18,13 +18,15 @@ function ResultSearchContainers(props) {
     onAddProductsToCart,
   } = props;
   const { state } = location;
+  const { q } = state;
   useEffect(() => {
     const endpoint = qs.stringify(state);
-    const url = `https://q9vjn.sse.codesandbox.io/ALL?${endpoint}`;
+    const url = `https://0yd7f.sse.codesandbox.io/ALL?${endpoint}`;
     fetchApiSearchProducts(url);
   }, [state]);
   return (
     <ResultSearch
+      keySearch={q}
       products={products}
       onAddProductsToCart={onAddProductsToCart}
     />

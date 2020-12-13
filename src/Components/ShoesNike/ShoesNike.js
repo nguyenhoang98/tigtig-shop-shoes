@@ -17,11 +17,14 @@ function ShoesNike(props) {
           style={{
             color: "tomato",
           }}
+          key={i}
         ></i>
       );
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i HomeProducts="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
@@ -31,12 +34,12 @@ function ShoesNike(props) {
       <div className="shoesnike__title text-center">
         <h2>Giày nike</h2>
         <hr />
-        <Link to="">Xem Thêm</Link>
+        <Link to="/tigtig-shop-shoes/nike">Xem Thêm</Link>
       </div>
       <div className="row">
         {nike.map((value, index) => {
           return (
-            <div className="shoesnike__card col-3 col-md-6">
+            <div className="shoesnike__card col-3 col-md-6" key={index}>
               <div
                 style={{
                   padding: 10,
@@ -51,6 +54,7 @@ function ShoesNike(props) {
                   <img
                     src={value.src}
                     className="shoesnike__card__image responsive-image"
+                    alt="Ảnh"
                   />
                   <div className="shoesnike__card__body">
                     <div className="shoesnike__card__body__rating">

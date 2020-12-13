@@ -11,10 +11,12 @@ function WomonShoes(props) {
   function onShowRating(rating) {
     const result = [];
     for (var i = 1; i <= rating; i++) {
-      result.push(<i className="fa fa-star" aria-hidden="true"></i>);
+      result.push(<i className="fa fa-star" aria-hidden="true" key={i}></i>);
     }
     for (var j = 1; j <= 5 - rating; j++) {
-      result.push(<i className="fa fa-star-o" aria-hidden="true"></i>);
+      result.push(
+        <i className="fa fa-star-o" aria-hidden="true" key={i + j}></i>
+      );
     }
     return result;
   }
@@ -34,9 +36,9 @@ function WomonShoes(props) {
         <FilterProducts filterRating={filterRating} filterColor={filterColor} />
       </div>
       <div className="womonshoes__products row col-10 col-md-12">
-        {shoesWomon.map((value) => {
+        {shoesWomon.map((value, index) => {
           return (
-            <div className="womonshoes__card col-3 col-md-6">
+            <div className="womonshoes__card col-3 col-md-6" key={index}>
               <div
                 className="womonshoes__card__animation"
                 style={{
